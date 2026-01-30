@@ -18,5 +18,7 @@ NMEA Cable: https://www.amazon.com/dp/B001G9W0WA
  
 One might also need an adapter or tee fitting if there isn't a free port on your NMEA network... 
  
-Installation and configuration is covered in this excellent article on Steve Mitchell's highly useful Seabits site.  He covers most of what's needed to get up and running. 
+Installation and configuration is covered in this excellent article on Steve Mitchell's highly useful Seabits site.  He covers most of what's needed to get up and running:
+
+https://seabits.com/set-up-signal-k-and-grafana-on-raspberry-pi-with-pican-m-nmea-2000-board/
  
