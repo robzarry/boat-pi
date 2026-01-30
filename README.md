@@ -29,4 +29,12 @@ One might also need an adapter or tee fitting if there isn't a free port on your
 Installation and configuration is covered in this excellent article on Steve Mitchell's highly useful Seabits site.  He covers most of what's needed to get up and running:
 
 https://seabits.com/set-up-signal-k-and-grafana-on-raspberry-pi-with-pican-m-nmea-2000-board/
+
+I used this article to get remote alerts set up using Pushover:
+
+https://signalk.org/2025/signalk-local-remote-alerts/
+
+and now I'm working in implementing the MCP server:
+
+https://signalk.org/2025/introducing-signalk-mcp-server-ai-powered-marine-data-access/
  
