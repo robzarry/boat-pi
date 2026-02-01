@@ -24,7 +24,9 @@ sudo apt-get install unattended-upgrades -y
 #
 sudo dpkg-reconfigure --priority=low unattended-upgrades
 #
-# Future - automate adding these lines to /boot/firmware/config.txt (sed?)
+# Need to add steps to configure unattended upgrades correctly and send notifications via Pushover
+#
+# Future - automate adding the lines below to /boot/firmware/config.txt (sed?)
 #
 enable_uart=1
 dtparam=i2c_arm=on
