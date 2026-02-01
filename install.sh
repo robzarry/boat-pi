@@ -12,9 +12,15 @@ sudo apt-get full-upgrade
 
 sudo hostnamectl set-hostname
 
-# Set timezone
-
+# Set timezone interactively
+#
 sudo dpkg-reconfigure tzdata
+#
+# Set timezone programmatically in production
+#
+# echo "America/New_York" | sudo tee /etc/timezone
+# sudo dpkg-reconfigure -f noninteractive tzdata
+#
 #
 # Configure for unattended updates
 #
@@ -24,7 +30,12 @@ sudo apt-get install unattended-upgrades -y
 #
 sudo dpkg-reconfigure --priority=low unattended-upgrades
 #
-# Need to add steps to configure unattended upgrades correctly and send notifications via Pushover
+# Install Required Tools: Ensure curl is installed (sudo apt install curl).
+# Obtain Pushover Keys: Get your User Key and create an Application API Token from the Pushover website.
+# Configure Unattended Upgrades: Edit /etc/apt/apt.conf.d/50unattended-upgrades to ensure reports are generated:
+# Set Unattended-Upgrade::MailReport "on-change"; (or "always" to test).
+# Edit upgrade notification script and save to  /usr/local/bin/pushover-notify.sh
+# to send the contents of the log file to Pushover using curl.
 #
 # Future - automate adding the lines below to /boot/firmware/config.txt (sed?)
 #
